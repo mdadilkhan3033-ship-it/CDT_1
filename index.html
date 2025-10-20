@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Landing Page</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background-color: #0a0a0a;
+      color: #fff;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 48px;
+      color: #ff3b3f;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 18px;
+      color: #ddd;
+      max-width: 500px;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      padding: 14px 28px;
+      background-color: #ff3b3f;
+      color: white;
+      border: none;
+      border-radius: 30px;
+      font-size: 18px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #ff5e62;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Welcome to Our Landing Page</h1>
+  <p>Discover more with a single click. Explore the world of information now!</p>
+  <button class="btn" id="cta-btn">Go to Google</button>
+
+  <script>
+    document.getElementById("cta-btn").addEventListener("click", function() {
+      window.location.href = "https://www.google.com";
+    });
+  </script>
+
+</body>
+</html>
